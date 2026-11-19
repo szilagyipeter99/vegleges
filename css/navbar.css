@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: lightgray;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.navbar img {
+  width: 50px;
+}
+
+.navbar #open-menu,
+.navbar #close-menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar #open-menu {
+    display: block;
+  }
+}
