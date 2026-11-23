@@ -18,11 +18,25 @@
 
 .navbar #open-menu,
 .navbar #close-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
   display: none;
 }
 
 @media screen and (max-width: 768px) {
   .navbar #open-menu {
     display: block;
+  }
+
+  .navbar ul {
+    background-color: green;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    padding-top: 2rem;
   }
 }
