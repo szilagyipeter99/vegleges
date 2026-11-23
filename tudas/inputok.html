@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inputok használata</title>
+  </head>
+  <body>
+    <!-- CSS beágyazva a HTML-be: -->
+    <style>
+      .inputok {
+        display: flex; /* FLEXBOX struktúra használata */
+        flex-direction: column; /* oszlopos elrendezés (csak FLEXBOX tud ilyet) */
+        gap: 1rem; /* rés az elemek között (csak FLEXBOX és GRID tud ilyet) */
+        /* 1 rem = 16 pixel */
+      }
+    </style>
+
+    <div class="inputok">
+      <!-- Sima szöveg bemenet -->
+      <input type="text" placeholder="Szöveg..." />
+
+      <!-- Telefonszám bemenet (telefonon számos billentyű) -->
+      <input type="tel" placeholder="+36 30 ..." />
+
+      <!-- Email bemenet (telefonon kukac kirakva) -->
+      <input type="email" placeholder="valami@valami.hu" />
+
+      <!-- Jelszó bemenet (pöttyök látszanak) -->
+      <input type="password" placeholder="Titkos jelszó" />
+
+      <!-- Kipipálható mező -->
+      <div>
+        <input type="checkbox" id="jelolo" />
+        <label for="jelolo">Ezt itt jelöld be</label>
+      </div>
+
+      <!-- Lenyíló menü -->
+      <select>
+        <option value="elso">Elso</option>
+        <option value="masodik">Masodik</option>
+      </select>
+
+      <!-- Rádió gombok (1 lehet kiválasztva) -->
+      <!-- (Páronként azonosító egyezik, összesnek közös neve van) -->
+      <div>
+        <input type="radio" id="azonosító_1" name="közös_név" value="1" />
+        <label for="azonosító_1">Első</label>
+        <input type="radio" id="azonosító_2" name="közös_név" value="2" />
+        <label for="azonosító_2">Második</label>
+        <input type="radio" id="azonosító_3" name="közös_név" value="3" />
+        <label for="azonosító_3">Harmadik</label>
+      </div>
+    </div>
+  </body>
+</html>
