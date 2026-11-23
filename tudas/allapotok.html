@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Állapotok</title>
+  </head>
+  <body>
+    <style>
+      h2 {
+        width: fit-content;
+        color: green;
+        transition: 0.3s;
+      }
+
+      h2:hover {
+        color: red;
+        cursor: pointer;
+        transform: translateX(50px);
+        animation: helo 0.5s forwards;
+      }
+
+      button {
+        transition: 0.3s;
+      }
+
+      button:hover {
+        transform: translateY(-3px);
+      }
+
+      button:active {
+        transform: translateY(-2px);
+      }
+
+      @keyframes helo {
+        from {
+          border-bottom: 5px solid green;
+        }
+        to {
+          border-bottom: 15px solid purple;
+        }
+      }
+    </style>
+    <h2>Valamilyen valami</h2>
+    <button>Gomb</button>
+  </body>
+</html>

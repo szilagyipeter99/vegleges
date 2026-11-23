@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Szülő és gyermek</title>
+  </head>
+  <body>
+    <style>
+      .szulo {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      /* Összes button típusú gyermek: */
+      .szulo button {
+        font-size: 2rem;
+      }
+
+      /* Olyan button típusú elem, amely első gyermek */
+      .szulo button:first-child {
+        color: blueviolet;
+      }
+
+      .szulo button:last-child {
+        color: chocolate;
+      }
+
+      .szulo button:nth-child(3),
+      .szulo button:nth-child(4) {
+        color: red;
+      }
+
+      /* Páratlanadik gyermekek */
+      .szulo button:nth-child(2n + 1) {
+        font-weight: 800;
+      }
+
+      /* A NEM hárommal oszthatóadik gyermekek */
+      .szulo button:not(:nth-child(3n)) {
+        text-transform: uppercase;
+      }
+    </style>
+
+    <div class="szulo">
+      <button>Egy</button>
+      <button>Kettő</button>
+      <button>Három</button>
+      <button>Négy</button>
+      <button>Öt</button>
+    </div>
+
+    <style>
+      .szulo-1 > p:nth-child(2) {
+        color: darkorange;
+      }
+    </style>
+
+    <div class="szulo-1">
+      <p>Gyerek</p>
+      <p>Színes akarok lenni</p>
+      <div class="szulo-2">
+        <p>Gyerek</p>
+        <p>Gyerek</p>
+      </div>
+      <p>Gyerek</p>
+    </div>
+  </body>
+</html>

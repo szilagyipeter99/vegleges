@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Szövegek</title>
+  </head>
+  <body>
+    <!-- Címsorok: -->
+
+    <!-- 1-es szintű: -->
+    <h1>Ez egy nagy cím</h1>
+
+    <!-- 2-es szintű: -->
+    <h2>Ez egy kisebb cím</h2>
+
+    <!-- 3-as szintű: -->
+    <h3>Ez egy kis cím</h3>
+
+    <!-- h4... h5... -->
+
+    <!-- Egyszerű szöveg: -->
+    <p>Ez egy egyszerű szöveg</p>
+
+    <style>
+      .modositott {
+        color: blue;
+        text-decoration: underline; /* Dekorálás aláhúzással */
+        text-transform: uppercase; /* Átalakítás nagybetűssé */
+        font-weight: 600; /* Vastagság 100-900 (400: Sima, 600: Félkövér ...) */
+        font-size: 0.75rem; /* Mivel 1 rem az alap, ez egy egészen kis méret */
+      }
+    </style>
+
+    <!-- Módosított szöveg: -->
+    <p class="modositott">Ezen a szövegen csomó mindent beállítottunk...</p>
+
+    <style>
+      .szulo {
+        color: green;
+        font-weight: 200;
+      }
+    </style>
+
+    <!-- A gyerek örökli a szülő beállításait -->
+    <div class="szulo">
+      <p>Egyik szöveg</p>
+      <p>Másik szöveg</p>
+      <p>Harmadik szöveg</p>
+    </div>
+  </body>
+</html>
